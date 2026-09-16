@@ -1,0 +1,4 @@
+import Link from 'next/link';
+import { ArrowRight, Menu } from 'lucide-react';
+import { Logo } from './logo';
+export function Header() { return <header className="border-b border-line/80 bg-white/90 backdrop-blur"><div className="mx-auto flex h-[72px] max-w-7xl items-center justify-between px-5 lg:px-8"><Logo /><nav className="hidden items-center gap-7 text-sm font-semibold text-muted md:flex"><Link href="/#how">Comment ça marche</Link><Link href="/#features">Fonctionnalités</Link><Link href="/pricing">Tarifs</Link><Link href="/#faq">FAQ</Link></nav><div className="flex items-center gap-2.5"><Link href="/login" className="hidden px-3 py-2 text-sm font-bold text-muted sm:block">Connexion</Link><Link href="/analyze" className="btn-primary text-sm">Analyser mon site <ArrowRight size={16}/></Link><button className="rounded-lg p-2 text-muted md:hidden" aria-label="Ouvrir le menu"><Menu size={21}/></button></div></div></header> }

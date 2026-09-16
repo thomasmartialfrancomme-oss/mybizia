@@ -1,0 +1,3 @@
+import Link from 'next/link';
+import { CheckCircle2, ArrowRight } from 'lucide-react';
+export default function PaymentSuccessPage() { return <main className="min-h-[600px] bg-cloud"><div className="mx-auto max-w-xl px-5 py-24 text-center"><div className="card p-10"><CheckCircle2 className="mx-auto text-mint" size={52}/><h1 className="mt-6 text-3xl font-black">Paiement reçu.</h1><p className="mt-4 text-sm leading-6 text-muted">Votre abonnement sera activé après confirmation du webhook Stripe. La page de succès seule ne modifie pas votre plan.</p><Link href="/dashboard" className="btn-primary mt-7">Retour au tableau de bord <ArrowRight size={16}/></Link></div></div></main> }
